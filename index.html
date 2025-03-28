@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoopEDU - Início</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #00d9ff;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background: #00d9ff;
+      color: #000;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #00b4d8;
+    }
+
+    section.features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: #1c2a40;
+    }
+
+    .feature {
+      background-color: #2e3f5c;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .feature h3 {
+      color: #00d9ff;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LoopEDU</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bem-vindos ao LoopEDU</h2>
+    <p>Um hub de aprendizado e desenvolvimento onde alunos de ADS constroem experiências práticas, aprendem novas tecnologias e criam um portfólio de impacto para o futuro profissional.</p>
+    <!-- <a href="#projetos" class="cta-button">Ver Projetos</a> -->
+    <p>A primeiro step, realizem a leitura e estudo do W3School, referentes à Python e HTML e CSS.<br>
+        Não sabe onde encontrar? Tá aqui:<br>
+        <a href="https://www.w3schools.com/python/default.asp" target="_blank" class="cta-button">Python</a>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="cta-button">HTML</a>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="cta-button">CSS</a><br>
+    </p><br><b>"Mas, queria testar o código, como posso fazer?"</b><br>
+        <p>SEGUINTE, baixa o Visual Code, ou se quiser pro Python, usa o Google Colab, não precisa instalar nada e ainda roda online!</p>
+        <a href="https://colab.research.google.com/" target="_blank" class="cta-button">Google Colab</a>
+        <a href="https://code.visualstudio.com/download" target="_blank" class="cta-button">Visual Studio Code</a><br>
+    
+  </section>
+
+  <section class="features" id="projetos">
+
+    <div class="feature">
+      <h3>Landing Pages</h3>
+      <p>Criação de páginas responsivas com HTML, CSS e JavaScript.</p>
+    </div>
+    <div class="feature">
+      <h3>Integrações com APIs</h3>
+      <p>Exploração de dados reais com consumo e integração de APIs públicas e privadas.</p>
+    </div>
+    <div class="feature">
+      <h3>Projetos Práticos</h3>
+      <p>Desafios e aplicações completas com foco no mercado de trabalho.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 LoopEDU - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
