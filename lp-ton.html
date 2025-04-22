@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voucher 2025</title>
+		<style>
+			body {
+				background-color: #999999;
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				flex-direction: column;
+				margin: 0;
+				#card {
+					background-color: white;
+					padding: 30px;
+					border-radius: 15px;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.22);
+					text-align: center;
+					transition: transform 0.3s ease, box-shadow 0, 3s ease;
+				}
+				#card:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.22);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="card">
+			<h1>Voucher 2025</h1>
+			<p>Insira seu token de 8 digitos</p>
+			<input id="tokenInput" type="text" maxlength="8" placeholder="00000000" />
+			<button id="validateBtn">Validar Token</button>
+		</div>
+		<script>
+			const botao = document.getElementById("validateBtn");
+			const input = document.getElementById("tokenInput");
+			botao.addEventListener("click", function () {
+				const token = input.value;
+				if (token.length === 8) {
+					alert(
+						"Token validado com sucesso! Você ganhou um voucher de desconto no site no valor de 50 reais."
+					);
+				} else {
+					alert("O token deve ter exatamente 8 digitos");
+				}
+			});
+		</script>
+	</body>
+</html>
