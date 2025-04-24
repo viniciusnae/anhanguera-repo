@@ -2,18 +2,87 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>LANDING PAGE - JHOW</title>
         <style>
 
-            body {
-                background-color: #efefef;
+            * {
+                margin: 0 auto;
+                text-align: center;
             }
 
+            body {
+                background-color: #005994;
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .titulo-login {
+                margin: 100px 0 20px 0;
+            }
+
+            .titulo-login h2 {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+
+            .box-login {
+                padding: 20px;
+                background-color: #efefef;
+                color: #000;
+                width: 300px;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .label-form {
+                font-weight: 500;
+            }
+
+            .campos-login {
+                margin: 5px 0 20px 0;
+                border-radius: 5px;
+                border: 2px solid #bebebe;
+                padding: 10px;
+                width: 250px;
+                text-align: left;
+            }
+
+            .campos-login:hover {
+                border: 2px solid #005994;
+            }
+
+            .btn-login {
+                background-color: #005994;
+                border: none;
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                border-radius: 5px;
+                width: 100%;
+                padding: 10px 0;
+            }
 
         </style>
     </head>
     <body>
-        <h1>Olá, mundo!</h1>
+        <section class="titulo-login">
+            <h1>Página de Login</h1>
+            <h2>Acesse sua conta</h2>
+        </section>
+
+        <section class="box-login">
+            <form>
+                <label class="label-form" for="email">E-mail:</label><br>
+                <input class="campos-login" id="email" name="email" type="text" placeholder="Digite seu e-mail"/><br>
+
+                <label class="label-form" for="senha">Senha:</label><br>
+                <input class="campos-login" id="senha" name="senha" type="password" placeholder="Digite sua senha"/><br>
+
+                <input class="btn-login" type="submit" value="Acessar"/>
+
+            </form>
+        </section>
         
     </body>
 </html>
