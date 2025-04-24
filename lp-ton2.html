@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voucher 2025</title>
+		<style>
+			body {
+				background-color: #999;
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+
+			.card-container {
+				position: relative;
+				width: 320px;
+				height: auto;
+			}
+
+			.card-border {
+				position: absolute;
+				inset: 0;
+				padding: 3px; /* borda mais fina */
+				border-radius: 20px;
+				background: conic-gradient(from 0deg, #ff00cc, #3333ff, #00ffcc, #ff00cc);
+				animation: rotateBorder 3s linear infinite;
+				z-index: 0;
+				mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+				mask-composite: exclude;
+				-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+				-webkit-mask-composite: xor;
+				border-radius: 20px;
+			}
+
+			@keyframes rotateBorder {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+
+			.card {
+				position: relative;
+				background: white;
+				padding: 40px 30px;
+				border-radius: 20px;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+				z-index: 1;
+			}
+
+			h1 {
+				margin-top: 0;
+			}
+
+			input {
+				margin-top: 10px;
+				padding: 10px;
+				border-radius: 8px;
+				border: 1px solid #ccc;
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			button {
+				margin-top: 10px;
+				padding: 10px 20px;
+				border-radius: 8px;
+				border: none;
+				background-color: #333;
+				color: white;
+				cursor: pointer;
+				width: 100%;
+			}
+
+			button:hover {
+				background-color: #555;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card-container">
+			<div class="card-border"></div>
+			<div class="card">
+				<h1>Voucher 2025</h1>
+				<p>Insira seu token de 8 dígitos</p>
+				<input id="tokenInput" type="text" maxlength="8" placeholder="00000000" />
+				<button id="validateBtn">Validar Token</button>
+			</div>
+		</div>
+
+		<script>
+			const botao = document.getElementById("validateBtn");
+			const input = document.getElementById("tokenInput");
+
+			botao.addEventListener("click", function () {
+				const token = input.value;
+				if (token.length === 8) {
+					alert(
+						"Token validado com sucesso! Você ganhou um voucher de desconto no site no valor de 50 reais."
+					);
+				} else {
+					alert("O token deve ter exatamente 8 dígitos");
+				}
+			});
+		</script>
+	</body>
+</html>
