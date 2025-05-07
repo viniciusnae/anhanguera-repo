@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>O que é Bootstrap</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">Bootstrap Site</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="introdução.html">Introdução</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="responsividade.html">Responsividade</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="componentes.html">Componentes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="interatividade.html">Interatividade</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="galeria.html">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header class="bg-primary text-white text-center py-5">
+			<h1>O que é o Bootstrap?</h1>
+			<p class="lead">
+				Aprenda como criar sites responsivos e modernos com este poderoso framework.
+			</p>
+		</header>
+		<section class="container my-5">
+			<h2>Introdução</h2>
+			<p>
+				Bootstrap é um framework front-end gratuito e de código aberto usado para
+				desenvolver sites responsivos e mobile-first com HTML, CSS e JavaScript.
+				<br />
+				Ele fornece uma coleção de estilos prontos, componentes e funcionalidades
+				interativas que aceleram o desenvolvimento web.
+			</p>
+			<h3>Como usar</h3>
+			<p>Você pode usar o Bootstrap de duas formas:</p>
+			<ul>
+				<li>Via CDN (como estamos fazendo neste projeto)</li>
+				<li>Fazendo o download e hospedando os arquivos localmente</li>
+			</ul>
+			<p>Veja como fazer a configuração via CDN:</p>
+			<!-- Caixa 1: HEAD -->
+			<div class="mb-4">
+				<h5 class="fw-bold">
+					1️⃣ Insira a seguinte linha de código no &lt;head&gt; logo após o &lt;title&gt;
+					(CSS do Bootstrap):
+				</h5>
+				<div class="position-relative">
+					<pre class="bg-light p-3 rounded border"><code id="codigo-head">
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+		</code></pre>
+					<button
+						class="btn btn-outline-primary position-absolute top-0 end-0 m-2"
+						onclick="copiar('codigo-head')"
+					>
+						Copiar
+					</button>
+				</div>
+			</div>
+
+			<!-- Caixa 2: BODY -->
+			<div class="mb-4">
+				<h5 class="fw-bold">
+					2️⃣ Insira a seguinte linha de código antes de fechar o &lt;/body&gt; (JS do
+					Bootstrap):
+				</h5>
+				<div class="position-relative">
+					<pre class="bg-light p-3 rounded border"><code id="codigo-body">
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+		</code></pre>
+					<button
+						class="btn btn-outline-primary position-absolute top-0 end-0 m-2"
+						onclick="copiar('codigo-body')"
+					>
+						Copiar
+					</button>
+				</div>
+			</div>
+
+			<script>
+				function copiar(id) {
+					const codigo = document.getElementById(id).innerText;
+					navigator.clipboard.writeText(codigo).then(() => {
+						alert("Código copiado para a área de transferência!");
+					});
+				}
+			</script>
+		</section>
+		<footer class="bg-dark text-white text-center py-4">
+			<p>&copy; 2025 Bootstrap Site Educativo</p>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
