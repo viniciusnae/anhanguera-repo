@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('../fonts/Gotham-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.otf') format('truetype');
+}
+
+* {
+    font-family: 'Gotham', sans-serif;
+}
+
+.menuTopo {
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+}
+
+.backgroundPrincipal {
+    width: 100%;
+    height: 550px;
+    background-color: #eaeaea !important;
+    background: url(../img/bannerPrincipal.png) no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+}
+
+.imgPrincipal {
+    padding-top: 85px;
+    width: 700px;
+    height: auto;
+}
+
+.tituloPrincipal {
+    font-family: 'Gotham Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.backgroundPrincipal {
+    width: 100%;
+    height: 550px;
+    background-color: #eaeaea !important;
+    background: url(../img/bannerPrincipal.png) no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+}
+
+.tiggo2 {
+    background-color: #eaeaea;
+}
+
+.tiggo2 h1 {
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #5c5c5c;
+}
+
+.tiggo5 .imgParcel {
+    width: 600px;
+    height: auto;
+}
+
+.arrizo5 {
+    background-color: #eaeaea;
+}
+
+.arrizo5 h1 {
+    text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #5c5c5c;
+}
+
+.arrizo5 .imgParcel {
+    width: 300px;
+    height: auto;
+}
+
+.formulario {
+    background-color: #eaeaea;
+}
+
+.formulario h1 {
+    font-family: 'Gotham Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.formulario form {
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.formulario form input {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: transparent !important;
+    border: 1px solid #5c5c5c;
+}
+
+.formulario form select {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: transparent !important;
+    border: 1px solid #5c5c5c;
+}
+
+.btnFormulario {
+    text-transform: uppercase;
+    border: 1px solid #5c5c5c;
+    border-radius: 50px;
+    padding: 5px 50px;
+}
+
+.btnFormulario:hover {
+    border: 1px solid #5c5c5c;
+    background-color: #5c5c5c;
+    color: #fff;
+}
+
+footer {
+    background-color: #eaeaea;
+    font-size: 0.5rem;
+    text-align: justify;
+    text-transform: uppercase;
+}
